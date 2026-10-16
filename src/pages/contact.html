@@ -1,0 +1,165 @@
+---
+title: Contact Us | Janeses Integrated Services Ltd
+description: Book a consultation with Janeses Integrated Services Ltd for your wedding, birthday or corporate event in Jos, Nigeria. Call, WhatsApp, email or send an inquiry.
+path: contact.html
+active: contact
+---
+<header class="page-head">
+  <div class="container-xl">
+    <div class="breadcrumb-jan mb-3"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
+    <div class="eyebrow">Let's talk</div>
+    <h1>Tell us about your event.</h1>
+  </div>
+</header>
+
+<section class="section-pad pb-0">
+  <div class="container-xl">
+    <div class="contact-strip reveal">
+      <div class="contact-card">
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.99.36 1.96.68 2.9a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.18-1.25a2 2 0 012.11-.45c.94.32 1.91.55 2.9.68A2 2 0 0122 16.92z"/></svg></div>
+        <h4>Phone</h4>
+        <p><a href="tel:+{{PHONE_1_INTL}}">{{PHONE_1}}</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 01-12.5 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"/></svg></div>
+        <h4>WhatsApp</h4>
+        <p><a href="https://wa.me/{{PHONE_1_INTL}}" target="_blank" rel="noopener">Chat for quick quotes and availability</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></div>
+        <h4>Email</h4>
+        <p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h4>Visit Us</h4>
+        <p>{{ADDRESS}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="form">
+  <div class="container-xl">
+    <div class="row g-5">
+      <div class="col-lg-7 reveal">
+        <div class="eyebrow">Book a consultation</div>
+        <h2 class="section-title">Send us your event details</h2>
+        <p class="section-lead mb-4">Fill in as much as you can. The more we know, the better we can plan. We reply within one working day.</p>
+
+        <div class="form-success" id="formSuccess" role="status" tabindex="-1"></div>
+
+        <form class="jan-form" id="janForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6 form-field">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" data-required autocomplete="name" placeholder="Your full name">
+              <div class="invalid-feedback-jan">Please enter your full name.</div>
+            </div>
+            <div class="col-md-6 form-field">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" data-required autocomplete="email" placeholder="you@example.com">
+              <div class="invalid-feedback-jan">Please enter a valid email address.</div>
+            </div>
+            <div class="col-md-6 form-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" data-required autocomplete="tel" placeholder="080X XXX XXXX">
+              <div class="invalid-feedback-jan">Please enter a valid phone number.</div>
+            </div>
+            <div class="col-md-6 form-field">
+              <label for="eventType">Event Type</label>
+              <select class="form-select" id="eventType" name="eventType" data-required>
+                <option value="" selected disabled>Select event type</option>
+                <option>Wedding</option>
+                <option>Birthday / Kiddies Party</option>
+                <option>Corporate Event</option>
+                <option>Catering Only</option>
+                <option>Cake Order</option>
+                <option>Training Enquiry</option>
+                <option>Styled Shoot</option>
+                <option>Other</option>
+              </select>
+              <div class="invalid-feedback-jan">Please select an event type.</div>
+            </div>
+            <div class="col-md-6 form-field">
+              <label for="eventDate">Event Date</label>
+              <input type="date" class="form-control" id="eventDate" name="eventDate" data-required>
+              <div class="invalid-feedback-jan">Please select your event date.</div>
+            </div>
+            <div class="col-md-6 form-field">
+              <label for="budget">Estimated Budget (&#8358;)</label>
+              <select class="form-select" id="budget" name="budget">
+                <option value="" selected disabled>Select a range</option>
+                <option>Under &#8358;500,000</option>
+                <option>&#8358;500,000 &ndash; &#8358;1,500,000</option>
+                <option>&#8358;1,500,000 &ndash; &#8358;5,000,000</option>
+                <option>Above &#8358;5,000,000</option>
+              </select>
+            </div>
+            <div class="col-12 form-field">
+              <label for="message">Tell us about your event</label>
+              <textarea class="form-control" id="message" name="message" rows="5" data-required placeholder="Guest count, venue, theme, services you're interested in..."></textarea>
+              <div class="invalid-feedback-jan">Please share a few details about your event.</div>
+            </div>
+          </div>
+          <button type="submit" class="btn-jan btn-gold mt-4">Send Inquiry</button>
+        </form>
+      </div>
+
+      <div class="col-lg-5 reveal">
+        <div class="map-ph mb-4">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Google Map placeholder: Sunny Peace Plaza, Zaria Road, Jos</span>
+        </div>
+        <div class="side-card mb-4">
+          <h3>Prefer to talk it through?</h3>
+          <p>Message us on WhatsApp for a same-day reply on availability and pricing.</p>
+          <a href="https://wa.me/{{PHONE_1_INTL}}" target="_blank" rel="noopener" class="btn-jan btn-gold btn-sm-jan">Chat on WhatsApp</a>
+        </div>
+        <div class="side-card side-card-light">
+          <h3>Not ready to book yet?</h3>
+          <p>Grab our free Event Planning Starter Kit: a 12-week checklist, budget planner and day-of timeline.</p>
+          <a href="index.html#kit" data-open-kit class="btn-jan btn-navy btn-sm-jan">Get the Free Kit</a>
+        </div>
+        <p class="small mt-4 mb-0">Follow our work: <a href="https://www.instagram.com/janeses_concepts" target="_blank" rel="noopener" class="text-royal">@janeses_concepts</a> &middot; <a href="https://www.instagram.com/janesesbridesparlor" target="_blank" rel="noopener" class="text-royal">@janesesbridesparlor</a> &middot; <a href="https://www.instagram.com/janeses_cakes" target="_blank" rel="noopener" class="text-royal">@janeses_cakes</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-tint">
+  <div class="container-xl">
+    <div class="row g-5">
+      <div class="col-lg-4 reveal">
+        <div class="eyebrow">Good to know</div>
+        <h2 class="section-title">Frequently asked questions</h2>
+        <p class="section-lead">Can't find what you're looking for? Send us a message and we'll get back to you directly.</p>
+      </div>
+      <div class="col-lg-8 reveal">
+        <!-- PLACEHOLDER answers: confirm lead times, travel and deposit policy with the team -->
+        <div class="accordion accordion-jan" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">How far in advance should I book?</button></h3>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">We recommend booking at least 4&ndash;6 weeks ahead for weddings and large events, and 1&ndash;2 weeks for smaller birthdays. Popular dates fill up faster, so booking early secures your preferred date.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Can I combine multiple services into one package?</button></h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes, that's how most clients work with us. We regularly combine catering, d&eacute;cor, cakes and drinks into one coordinated package so everything is delivered as a single, well-timed experience.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Do you travel outside Jos for events?</button></h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">We do. Travel and logistics for events outside Jos are calculated by distance and included in your quote.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">How do I get a price quote?</button></h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Fill in the inquiry form above with your event details, or message us on WhatsApp. We'll follow up with a tailored quote based on guest count, services and date.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">Is a deposit required to secure my date?</button></h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes, a deposit is required to lock in your date once your package is confirmed. Our team will walk you through the payment structure during your consultation.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
